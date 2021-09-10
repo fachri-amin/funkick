@@ -18,6 +18,12 @@
     color: map-get($colors, --white);
 }
 
+.primaryOutlineText {
+    background-color: transparent;
+    border: 2px solid map-get($colors, --primary);
+    color: map-get($colors, --primary);
+}
+
 .secondary {
     background-color: map-get($colors, --secondary);
     color: map-get($colors, --white);

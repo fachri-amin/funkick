@@ -1,0 +1,17 @@
+@import '../../../styles/colors';
+
+.itemEventContainer {
+
+    border-bottom: 1px solid map-get($colors, --grey3 );
+    padding-bottom: 35px;
+    margin-top: 90px;
+
+    .itemEventLeft, .itemEventRight {
+        padding: 0 35px;
+    }
+
+    p {
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+}

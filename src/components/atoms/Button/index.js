@@ -10,6 +10,7 @@ const Button = ({type, size, title, onClick}) => {
         [css.btn]: true,
         [css.primary]: type === 'primary',
         [css.primaryOutline]: type === 'primary-outline',
+        [css.primaryOutlineText]: type === 'primary-outline-text',
         [css.secondary]: type === 'secondary',
         [css.secondaryOutline]: type === 'secondary-outline',
         [css.sizeDefault]: size === 'default',
@@ -23,7 +24,7 @@ const Button = ({type, size, title, onClick}) => {
 }
 
 Button.propTypes = {
-    type: PropTypes.oneOf(['primary', 'secondary', 'primary-outline', 'secondary-outline']),
+    type: PropTypes.oneOf(['primary', 'secondary', 'primary-outline', 'primary-outline-text', 'secondary-outline']),
     size: PropTypes.oneOf(['default', 'lg', 'xl']),
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func,

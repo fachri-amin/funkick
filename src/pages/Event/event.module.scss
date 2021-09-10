@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+
+.eventContainer {
+    padding-top: 100px;
+
+    .eventTitleContainer{
+        margin: auto;
+        max-width: max-content;
+        text-align: center;
+        .eventTitle {
+            text-transform: uppercase;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: 0.2em;
+            margin: 0px;
+        }
+        
+        .underline {
+            display: inline-block;
+            margin: auto;
+        }
+    }
+
+    .listEvent {
+        margin: 80px 240px;
+    }
+
+    .buttonContainer {
+        text-align: center;
+    }
+
+}
