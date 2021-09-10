@@ -1,0 +1,25 @@
+@import '../../../../styles/colors';
+
+.tentangKamiContainer {
+    padding-top: 120px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.leftAboutUs, .rightAboutUs {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightAboutUsContent {
+    width: 500px;
+    // border: 1px solid red;
+    // margin-left: -100px;
+
+    p {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}

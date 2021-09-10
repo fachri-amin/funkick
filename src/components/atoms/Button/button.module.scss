@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.primary {
+    background-color: map-get($colors, --primary);
+    color: map-get($colors, --white);
+    border: none;
+}
+
+.primaryOutline {
+    background-color: transparent;
+    border: 2px solid map-get($colors, --primary);
+    color: map-get($colors, --white);
+}
+
+.secondary {
+    background-color: map-get($colors, --secondary);
+    color: map-get($colors, --white);
+}
+
+.secondaryOutline {
+    background-color: transparent;
+    border: 2px solid map-get($colors, --secondary);
+    color: map-get($colors, --secondary);
+}
+
+.sizeDefault {
+    padding: 4px 18px;
+}
+
+.sizeLg {
+    width: 244px;
+    height: 25px;
+}
+
+.sizeXl {
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+}

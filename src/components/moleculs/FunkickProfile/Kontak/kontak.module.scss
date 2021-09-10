@@ -1,0 +1,50 @@
+@import '../../../../styles/colors';
+
+.kontakContainer {
+    padding-top: 120px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.leftKontak, .rightKontak {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightKontakContent {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    form {
+        margin-bottom: 44px;
+    }
+
+    .orBorder {
+        padding: 0px;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+
+        .orContainer {
+            transform: translateY(-13px);
+            background-color: white;
+            width: 24px;
+            text-align: center;
+
+            p {
+                display: inline;
+            }
+        }
+
+    }
+
+    .social {
+        margin-top: 32px;
+        a {
+            margin: 0 25px;
+        }
+    }
+}

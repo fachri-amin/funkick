@@ -1,0 +1,53 @@
+@import '../../styles/colors';
+
+.content {
+    // padding-top: 100px;
+
+    .heroBanner {
+        height: 783px;
+        width: 100%;
+        // border: 1px solid red;
+        background: url('../../assets/img/hero-bg.png');
+        background-size: cover;
+        padding-top: 50px;
+        
+        .heroLeft {
+            display: flex;
+            height: 630px;
+            align-items: center;
+            justify-content: center;
+            
+            .heroLeftContent {
+                h1, p {
+                    color: map-get($colors, --white);
+                    letter-spacing: 0.06em;
+                }
+                
+                h1 {
+                    line-height: 36px;
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+                
+                p {
+                    margin-top: 11px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .heroRight {
+            display: flex;
+            height: 630px;
+            align-items: center;
+            justify-content: center;
+
+            .heroRightContent {
+                text-align: center;
+
+                > :last-child {
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+}
