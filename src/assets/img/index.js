@@ -4,6 +4,7 @@ import Logo from './logo.png';
 import Whatsapp from './whatsapp.png';
 import Instagram from './instagram.png';
 import EventImg from './event.png';
+import EmptyImg from './empty.png';
 
 export {
     AboutUsImg,
@@ -12,4 +13,5 @@ export {
     Whatsapp,
     Instagram,
     EventImg,
+    EmptyImg,
 }

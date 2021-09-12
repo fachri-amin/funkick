@@ -3,6 +3,7 @@ import CustomDatePicker from './CustomDatePicker';
 import FunkickProfile from './FunkickProfile';
 import Footer from './Footer';
 import ItemEvent from './ItemEvent';
+import EmptyState from './EmptyState';
 
 export {
     Header,
@@ -10,4 +11,5 @@ export {
     FunkickProfile,
     Footer,
     ItemEvent,
+    EmptyState,
 }
