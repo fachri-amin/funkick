@@ -24,6 +24,10 @@ const navLink = [
         path: '/',
     },
     {
+        title: 'Lapangan',
+        path: 'lapangan',
+    },
+    {
         title: 'Event',
         path: 'event',
     },

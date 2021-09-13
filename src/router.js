@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import {
     Home,
     Event,
+    Lapangan,
 } from './pages'
 
 const AppRouter = () => (
@@ -12,6 +13,9 @@ const AppRouter = () => (
         </Route>
         <Route exact path="/event">
             <Event />
+        </Route>
+        <Route exact path="/lapangan">
+            <Lapangan />
         </Route>
     </Switch>
 )

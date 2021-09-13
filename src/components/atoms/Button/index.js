@@ -13,18 +13,19 @@ const Button = ({type, size, title, onClick}) => {
         [css.primaryOutlineText]: type === 'primary-outline-text',
         [css.secondary]: type === 'secondary',
         [css.secondaryOutline]: type === 'secondary-outline',
+        [css.disable]: type === 'disable',
         [css.sizeDefault]: size === 'default',
         [css.sizeLg]: size === 'lg',
         [css.sizeXl]: size === 'xl',
     })
 
     return (
-        <button className={btnContainerClass} onClick={onClick}>{title}</button>
+        <button disabled={type === 'disable'} className={btnContainerClass} onClick={onClick}>{title}</button>
     )
 }
 
 Button.propTypes = {
-    type: PropTypes.oneOf(['primary', 'secondary', 'primary-outline', 'primary-outline-text', 'secondary-outline']),
+    type: PropTypes.oneOf(['primary', 'secondary', 'primary-outline', 'primary-outline-text', 'secondary-outline', 'disable']),
     size: PropTypes.oneOf(['default', 'lg', 'xl']),
     title: PropTypes.string.isRequired,
     onClick: PropTypes.func,

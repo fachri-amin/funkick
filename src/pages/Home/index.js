@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 import {
     Grid,
 } from '@material-ui/core';
 import moment from 'moment';
+import { useHistory } from "react-router-dom";
 
 import {
     Underline,
@@ -19,7 +19,13 @@ import css from './home.module.scss';
 const Home = () => {
     const tglBooking = useStoreState((state) => state.tglBooking);
     const setTglBooking = useStoreActions(actions => actions.setTglBooking);
-    const [date, changeDate] = useState(moment)
+    const [date, changeDate] = useState(moment);
+    const history = useHistory();
+
+    const cekLapanganHandle = () => {
+        setTglBooking(date);
+        history.push('/lapangan');
+    }
 
     return (
         <div>
@@ -43,7 +49,7 @@ const Home = () => {
                                 type="primary-outline"
                                 size="lg"
                                 title={"Cek Lapangan Kosong"}
-                                onClick={() => setTglBooking(date)}
+                                onClick={cekLapanganHandle}
                             />
                         </div>
                     </Grid>

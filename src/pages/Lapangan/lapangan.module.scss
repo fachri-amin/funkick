@@ -1,0 +1,45 @@
+@import '../../styles/colors';
+
+.lapanganTitleContainer{
+    margin: auto;
+    margin-top: 100px;
+    max-width: max-content;
+    text-align: center;
+    .lapanganTitle {
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0.2em;
+        margin: 0px;
+    }
+    
+    .underline {
+        display: inline-block;
+        margin: auto;
+    }
+}
+
+.lapanganContainer {
+    padding: 80px 225px;
+
+
+    .listlapangan {
+        margin: 80px 240px;
+    }
+
+    .datePickerContainer {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .buttonCekLapanganContainer {
+        margin-top: 40px !important;
+        text-align: center;
+        // border: 1px solid green;
+        margin: 0 auto;
+    }
+
+    .select {
+        margin-bottom: 40px !important;
+        text-align: center;
+    }
+}

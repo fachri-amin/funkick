@@ -35,6 +35,13 @@
     color: map-get($colors, --secondary);
 }
 
+.disable {
+    background-color: map-get($colors, --grey1);
+    color: map-get($colors, --white);
+    border: none;
+    cursor: not-allowed;
+}
+
 .sizeDefault {
     padding: 4px 18px;
 }
