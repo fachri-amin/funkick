@@ -22,7 +22,7 @@ const ItemEvent = ({
             <Grid item md={6} className={css.itemEventLeft}>
                 <img src={image} alt="Gambar Event" />
             </Grid>
-            <Grid item md={6} className={css.itemEventRight}>
+            <Grid item md={6} className={reverse ? css.itemEventRightReverse : css.itemEventRight} >
                 <h1>{title}</h1>
                 <p>
                     {desc}

@@ -6,8 +6,12 @@
     padding-bottom: 35px;
     margin-top: 90px;
 
-    .itemEventLeft, .itemEventRight {
+    .itemEventLeft, .itemEventRight, .itemEventRightReverse {
         padding: 0 35px;
+    }
+
+    .itemEventRightReverse {
+        text-align: end;
     }
 
     p {
